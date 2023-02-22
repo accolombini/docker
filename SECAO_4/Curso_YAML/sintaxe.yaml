@@ -1,7 +1,10 @@
-host: geek
-datacenter:
-  location: São Paulo
-  router: 42
+# Use espaços não use TAB --> a identação é feita por dois espaços
+# Use traços e epaço para fazer listas e dois pontos e espaço para fazer pares chave-valor
+
+host: accol  # Isto é um par chave-valor
+datacenter:  # Inicio de uma estrutura chave-valor
+  location: São Paulo  # Isto é um par chave-valor
+  router: 25  # Isto é um par chave-valor
 roles:
-  - web
-  - dns
+  - web   # Isto é uma lista
+  - dns   # Isto é uma lista

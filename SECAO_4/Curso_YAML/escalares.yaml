@@ -1,12 +1,15 @@
-host: geek
+# O que são escalares em YAML --> estamos falando de valores únicos
+host: accol
 datacenter:
   location: São Paulo
-  router: "42\n"
-  switch: '34'
+  router: "25\n"  # Note que 25 é um inteiro, mas por boa prática se ele não for utilizado em nenhum cálculo, recomenda-se que eles sejam escritos entre aspas simples ou duplas como no exemplo. Note que no uso das aspas duplas posso adicionar um comando, como por exemplo \n para pular uma linha, com o uso de aspas simples não podemos adicionar comandos.
+  switch: '33'
 roles:
   - webserver
   - database
-funcionamento: |
+
+  # Escalares de múltiplas linhas - há dois tipos, o que preserva a estrutura e o que não preserva a estrutura.
+funcionamento: |  # Observe aqui o uso do pipe | é ele que faz toda diferença => desta forma garantimos que o formato seja respeitado. Esta é forma de se escrever um valor escalar de múltiplas linhas preservando a estrutura das linhas.
   segunda - das 08:00 às 17:00
   terça   - das 09:00 às 18:00
   quarta  - das 10:00 às 19:00
@@ -14,11 +17,11 @@ funcionamento: |
   sexta   - das 12:00 às 21:00
   sábado  - das 13:00 às 22:00
   domingo - das 14:00 às 23:00
-comentarios: >
+comentarios: >  # Observe aqui o uso do maior > é ele que faz toda diferença => desta forma não garantimos que o formato seja respeitado. Esta é forma de se escrever um valor escalar de múltiplas linhas sem preservar a estrutura das linhas. Apresentará como se tudo estivesse em uma única linha. # Podemos, observe, pular uma linha identar e fazer um comentário que estará no contexto do comentário anterior, ou seja, é uma forma, por exemplo, de dizer quem foi o autor do comentário, no caso Artur Dutra, observe. Observe a identação isso é fundamental!!!
   Temos alto uso de CPU
   desde 04/10/2020.
   Estamos investigando.
 
-    Felicity Jones
-    felicity@gmail.com
+    Artur Dutra  
+    adutra@gmail.com
 

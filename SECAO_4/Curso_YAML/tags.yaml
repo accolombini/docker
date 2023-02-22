@@ -1,14 +1,17 @@
-%TAG ! tag:host:geek:
----
-host: geek
-datacenter:
-  location: !GEEK São Paulo
-  router: "42"
-  switch: '34'
----
-host: udemy
-datacenter:
-  location: Colorado
-  router: !!str 45
-  switch: !!str 23
+# TAGS => são usadas para configurar uma URL própria, podem ser locais ou até um tipo de dados.
+# Para iniciar uma TAG use %TAG 
+# Atenção essa versão do VsCode com o YANL não reconhece TAGS
 
+%TAG ! tag:host:accol:  # Esta é uma TAG chamada accol que configura um host
+---
+host: accol  # Esta não é a forma mais comum de configurar TAGs
+datacenter:
+  location: !ACCOL São Paulo
+  router: "25"  # Usando aspas para sinalizar que se trata de uma string
+  switch: '33'
+---
+host: UABC  # Esta é a forma sugerida para se usar TAGs
+datacenter:
+  location: AUSTRALIA
+  router: !!str 40   # Observe o uso de TAGs para representar aspas
+  switch: !!str 20

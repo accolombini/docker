@@ -1,15 +1,17 @@
+# Âncoras também não são reconhecidas pela plugin do YAM presente no VsCode
+# São usadas para armazenar e reutilizar dados, fazemos uso do * para refernciá-las. o & é usado para definir uma âncora.
 ---
-host: geek
+host: accol
 datacenter:
-  location: &SP São Paulo
+  location: &SP São Paulo  # Observe a criação da âncora com o &SP
 ---
-host: udemy
+host: uabc
 datacenter:
-  location: *SP
+  location: *SP  # Aqui usamos a âncora, note o uso do *
 ---
-roles: &ghost
+roles: &ghost  # Cria se uma âncora com o &ghost
   - webserver
   - database
 ...
 ---
-roles: *ghost
+roles: *ghost  # Uso da âncora com o *

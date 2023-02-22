@@ -1,16 +1,17 @@
----
-host: geek
+# Podemos ter múltiplas diretivas de configuração em um arquivo .yaml, para isso utilizamos um traço triplo.
+---  # Separador de configuração
+host: accol
 datacenter:
   location: São Paulo
-  router: 42
-  switch: 34
----
-host: udemy
+  router: 25
+  switch: 33
+---  # Separador de configuração
+host: uabc
 datacenter:
-  location: Colorado
+  location: Australia
   router: 23
   switch: 21
----
+---  # Separador de configuração
 host: outro
 datacenter:
   location: algum lugar

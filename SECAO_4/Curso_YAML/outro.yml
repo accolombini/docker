@@ -1,3 +1,5 @@
+# Este é um exemplo de sequência válido
+# Nesta sequência estamos dizendo que é preciso instalar Python, PostgreSQL, NGINX e Redis
 ---
 - python
 - nginx

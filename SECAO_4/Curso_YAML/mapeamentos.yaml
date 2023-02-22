@@ -1,7 +1,9 @@
-host: geek
-datacenter1:
+# Mapear uma chave a um valor --> são representados por dois pontos e espaço
+# Este é um mapeamento comum como visto anteriormente. Estilo bloco
+host: accol # Mapeamento chave valor
+datacenter1:  # Mapeamento chave valor
   location: São Paulo
-  router: 42
+  router: 25
 
-
-datacenter2: { location: São Paulo, router: 42}
+# Este é um mapemamnto do tipo flow.
+datacenter2: { location: São Paulo, router: 25 }

@@ -1,13 +1,17 @@
-host1: geek
+# Estilos podem ser block ou flow
+# Block é o estilo mais tranquilo de leitura e o recomendado
+
+host1: accol
 datacenter1:
   location: São Paulo
-  router: 42
+  router: 25
 roles1:
   - web
   - dns
 
+# O estilo abaixo é o que recebe o nome de fluxo, muito semelhante ao estilo json
 
-host2: "geek"
+host2: "accol"
 datacenter2: { location: 
-  São Paulo, router: 42 }
+  São Paulo, router: 25 }
 roles2: [ web, dns ]

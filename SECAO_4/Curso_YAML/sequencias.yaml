@@ -1,19 +1,20 @@
-roles:
+# Sequências podem ser dicionários, listas ou uma combinação entre elas
+# Uma sequência não pode ser vazia ou possuir linhas em branco
+
+roles:  # Este é um parâmetro que possui dois valores, note que não é uma estrutura chave valor
   - webserver
   - database
 
-
+# A seguir um exemplo do que não se deve fazer preste atenção nas diferenças
 # - payload
 #   - bitcoin
 #   - 
 #   - ethereum
 
-
+# Esto corrige os problemas anteriores
 payload1:
   - bitcoin
   - ethereum
 
-
+# No estilo Flow podemos escrever como abaixo
 payload2: [ bitcoin, ethereum ]
-
-

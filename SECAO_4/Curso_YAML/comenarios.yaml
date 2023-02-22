@@ -1,8 +1,9 @@
-# Configurações do host Gee
+# Configurações do host accol. Isto é um comentário ...
+# Linhas em branco, caso existam, serão tratadas pelo YAML como comentário
+# Para comentar múltiplas linhas de uma vez precione COMMAND + / para descomentar precione COMMAND + / novamente. No Windows substituia a tecla COMMAND por CTRL.
 ---
-host: geek
+host: accol
 datacenter:
   location: São Paulo # Capital do estado
-  router: 42
-  switch: 34
-
+  router: 25
+  switch: 33
